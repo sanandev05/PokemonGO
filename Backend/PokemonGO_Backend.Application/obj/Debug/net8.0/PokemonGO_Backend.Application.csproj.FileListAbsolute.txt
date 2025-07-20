@@ -1,0 +1,11 @@
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.Application\bin\Debug\net8.0\PokemonGO_Backend.Application.deps.json
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.Application\bin\Debug\net8.0\PokemonGO_Backend.Application.dll
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.Application\bin\Debug\net8.0\PokemonGO_Backend.Application.pdb
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.Application\obj\Debug\net8.0\PokemonGO_Backend.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.Application\obj\Debug\net8.0\PokemonGO_Backend.Application.AssemblyInfoInputs.cache
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.Application\obj\Debug\net8.0\PokemonGO_Backend.Application.AssemblyInfo.cs
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.Application\obj\Debug\net8.0\PokemonGO_Backend.Application.csproj.CoreCompileInputs.cache
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.Application\obj\Debug\net8.0\PokemonGO_Backend.Application.dll
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.Application\obj\Debug\net8.0\refint\PokemonGO_Backend.Application.dll
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.Application\obj\Debug\net8.0\PokemonGO_Backend.Application.pdb
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.Application\obj\Debug\net8.0\ref\PokemonGO_Backend.Application.dll

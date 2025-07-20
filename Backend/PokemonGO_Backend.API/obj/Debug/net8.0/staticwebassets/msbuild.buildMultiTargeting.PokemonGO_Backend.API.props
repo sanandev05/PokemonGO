@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\PokemonGO_Backend.API.props" />
+</Project>

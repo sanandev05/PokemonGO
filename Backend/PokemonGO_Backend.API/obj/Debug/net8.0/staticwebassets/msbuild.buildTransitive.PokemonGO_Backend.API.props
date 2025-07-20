@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\PokemonGO_Backend.API.props" />
+</Project>
