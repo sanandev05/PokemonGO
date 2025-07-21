@@ -1,0 +1,69 @@
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.API\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.API\bin\Debug\net8.0\appsettings.json
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.API\bin\Debug\net8.0\PokemonGO_Backend.API.exe
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.API\bin\Debug\net8.0\PokemonGO_Backend.API.deps.json
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.API\bin\Debug\net8.0\PokemonGO_Backend.API.runtimeconfig.json
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.API\bin\Debug\net8.0\PokemonGO_Backend.API.dll
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.API\bin\Debug\net8.0\PokemonGO_Backend.API.pdb
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.API\obj\Debug\net8.0\PokemonGO_Backend.API.csproj.AssemblyReference.cache
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.API\obj\Debug\net8.0\PokemonGO_Backend.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.API\obj\Debug\net8.0\PokemonGO_Backend.API.AssemblyInfoInputs.cache
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.API\obj\Debug\net8.0\PokemonGO_Backend.API.AssemblyInfo.cs
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.API\obj\Debug\net8.0\PokemonGO_Backend.API.csproj.CoreCompileInputs.cache
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.API\obj\Debug\net8.0\PokemonGO_Backend.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.API\obj\Debug\net8.0\PokemonGO_Backend.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.API\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.API\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.API\obj\Debug\net8.0\staticwebassets\msbuild.PokemonGO_Backend.API.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.API\obj\Debug\net8.0\staticwebassets\msbuild.build.PokemonGO_Backend.API.props
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.PokemonGO_Backend.API.props
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.PokemonGO_Backend.API.props
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.API\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.API\obj\Debug\net8.0\scopedcss\bundle\PokemonGO_Backend.API.styles.css
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.API\obj\Debug\net8.0\PokemonG.2E66854B.Up2Date
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.API\obj\Debug\net8.0\PokemonGO_Backend.API.dll
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.API\obj\Debug\net8.0\refint\PokemonGO_Backend.API.dll
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.API\obj\Debug\net8.0\PokemonGO_Backend.API.pdb
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.API\obj\Debug\net8.0\PokemonGO_Backend.API.genruntimeconfig.cache
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.API\obj\Debug\net8.0\ref\PokemonGO_Backend.API.dll
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.API\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.API\bin\Debug\net8.0\appsettings.json
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.API\bin\Debug\net8.0\PokemonGO_Backend.API.staticwebassets.endpoints.json
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.API\bin\Debug\net8.0\PokemonGO_Backend.API.exe
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.API\bin\Debug\net8.0\PokemonGO_Backend.API.deps.json
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.API\bin\Debug\net8.0\PokemonGO_Backend.API.runtimeconfig.json
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.API\bin\Debug\net8.0\PokemonGO_Backend.API.dll
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.API\bin\Debug\net8.0\PokemonGO_Backend.API.pdb
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.API\obj\Debug\net8.0\PokemonGO_Backend.API.csproj.AssemblyReference.cache
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.API\obj\Debug\net8.0\PokemonGO_Backend.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.API\obj\Debug\net8.0\PokemonGO_Backend.API.AssemblyInfoInputs.cache
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.API\obj\Debug\net8.0\PokemonGO_Backend.API.AssemblyInfo.cs
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.API\obj\Debug\net8.0\PokemonGO_Backend.API.csproj.CoreCompileInputs.cache
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.API\obj\Debug\net8.0\PokemonGO_Backend.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.API\obj\Debug\net8.0\PokemonGO_Backend.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.API\obj\Debug\net8.0\PokemonGO_Backend.API.sourcelink.json
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.API\obj\Debug\net8.0\scopedcss\bundle\PokemonGO_Backend.API.styles.css
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.API\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.API\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.API\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.API\obj\Debug\net8.0\staticwebassets\msbuild.PokemonGO_Backend.API.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.API\obj\Debug\net8.0\staticwebassets\msbuild.PokemonGO_Backend.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.API\obj\Debug\net8.0\staticwebassets\msbuild.build.PokemonGO_Backend.API.props
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.PokemonGO_Backend.API.props
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.PokemonGO_Backend.API.props
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.API\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.API\obj\Debug\net8.0\PokemonG.2E66854B.Up2Date
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.API\obj\Debug\net8.0\PokemonGO_Backend.API.dll
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.API\obj\Debug\net8.0\refint\PokemonGO_Backend.API.dll
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.API\obj\Debug\net8.0\PokemonGO_Backend.API.pdb
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.API\obj\Debug\net8.0\PokemonGO_Backend.API.genruntimeconfig.cache
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.API\obj\Debug\net8.0\ref\PokemonGO_Backend.API.dll

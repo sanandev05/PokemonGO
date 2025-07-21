@@ -1,0 +1,29 @@
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.Persistance\bin\Debug\net8.0\PokemonGO_Backend.Persistance.deps.json
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.Persistance\bin\Debug\net8.0\PokemonGO_Backend.Persistance.dll
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.Persistance\bin\Debug\net8.0\PokemonGO_Backend.Persistance.pdb
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.Persistance\obj\Debug\net8.0\PokemonGO_Backend.Persistance.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.Persistance\obj\Debug\net8.0\PokemonGO_Backend.Persistance.AssemblyInfoInputs.cache
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.Persistance\obj\Debug\net8.0\PokemonGO_Backend.Persistance.AssemblyInfo.cs
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.Persistance\obj\Debug\net8.0\PokemonGO_Backend.Persistance.csproj.CoreCompileInputs.cache
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.Persistance\obj\Debug\net8.0\PokemonGO_Backend.Persistance.dll
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.Persistance\obj\Debug\net8.0\refint\PokemonGO_Backend.Persistance.dll
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.Persistance\obj\Debug\net8.0\PokemonGO_Backend.Persistance.pdb
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.Persistance\obj\Debug\net8.0\ref\PokemonGO_Backend.Persistance.dll
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.Persistance\bin\Debug\net8.0\PokemonGO_Backend.Persistance.deps.json
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.Persistance\bin\Debug\net8.0\PokemonGO_Backend.Persistance.dll
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.Persistance\bin\Debug\net8.0\PokemonGO_Backend.Persistance.pdb
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.Persistance\obj\Debug\net8.0\PokemonGO_Backend.Persistance.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.Persistance\obj\Debug\net8.0\PokemonGO_Backend.Persistance.AssemblyInfoInputs.cache
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.Persistance\obj\Debug\net8.0\PokemonGO_Backend.Persistance.AssemblyInfo.cs
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.Persistance\obj\Debug\net8.0\PokemonGO_Backend.Persistance.csproj.CoreCompileInputs.cache
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.Persistance\obj\Debug\net8.0\PokemonGO_Backend.Persistance.sourcelink.json
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.Persistance\obj\Debug\net8.0\PokemonGO_Backend.Persistance.dll
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.Persistance\obj\Debug\net8.0\refint\PokemonGO_Backend.Persistance.dll
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.Persistance\obj\Debug\net8.0\PokemonGO_Backend.Persistance.pdb
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.Persistance\obj\Debug\net8.0\ref\PokemonGO_Backend.Persistance.dll
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.Persistance\bin\Debug\net8.0\PokemonGO_Backend.Persistance.runtimeconfig.json
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.Persistance\bin\Debug\net8.0\PokemonGO_Backend.Domain.dll
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.Persistance\bin\Debug\net8.0\PokemonGO_Backend.Domain.pdb
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.Persistance\obj\Debug\net8.0\PokemonGO_Backend.Persistance.csproj.AssemblyReference.cache
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.Persistance\obj\Debug\net8.0\PokemonG.39C84488.Up2Date
+C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.Persistance\obj\Debug\net8.0\PokemonGO_Backend.Persistance.genruntimeconfig.cache
