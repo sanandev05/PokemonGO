@@ -27,3 +27,21 @@ C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.Applicati
 C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.Application\bin\Debug\net8.0\PokemonGO_Backend.Domain.pdb
 C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.Application\obj\Debug\net8.0\PokemonG.E69BD47D.Up2Date
 C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.Application\obj\Debug\net8.0\ref\PokemonGO_Backend.Application.dll
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Application\bin\Debug\net8.0\PokemonGO_Backend.Application.deps.json
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Application\bin\Debug\net8.0\PokemonGO_Backend.Application.dll
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Application\bin\Debug\net8.0\PokemonGO_Backend.Application.pdb
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Application\bin\Debug\net8.0\PokemonGO_Backend.Contract.dll
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Application\bin\Debug\net8.0\PokemonGO_Backend.Domain.dll
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Application\bin\Debug\net8.0\PokemonGO_Backend.Contract.pdb
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Application\bin\Debug\net8.0\PokemonGO_Backend.Domain.pdb
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Application\obj\Debug\net8.0\PokemonGO_Backend.Application.csproj.AssemblyReference.cache
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Application\obj\Debug\net8.0\PokemonGO_Backend.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Application\obj\Debug\net8.0\PokemonGO_Backend.Application.AssemblyInfoInputs.cache
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Application\obj\Debug\net8.0\PokemonGO_Backend.Application.AssemblyInfo.cs
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Application\obj\Debug\net8.0\PokemonGO_Backend.Application.csproj.CoreCompileInputs.cache
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Application\obj\Debug\net8.0\PokemonGO_Backend.Application.sourcelink.json
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Application\obj\Debug\net8.0\PokemonG.E69BD47D.Up2Date
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Application\obj\Debug\net8.0\PokemonGO_Backend.Application.dll
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Application\obj\Debug\net8.0\refint\PokemonGO_Backend.Application.dll
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Application\obj\Debug\net8.0\PokemonGO_Backend.Application.pdb
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Application\obj\Debug\net8.0\ref\PokemonGO_Backend.Application.dll

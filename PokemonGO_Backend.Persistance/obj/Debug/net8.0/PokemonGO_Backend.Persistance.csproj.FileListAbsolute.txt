@@ -27,3 +27,21 @@ C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.Persistan
 C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.Persistance\obj\Debug\net8.0\PokemonGO_Backend.Persistance.csproj.AssemblyReference.cache
 C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.Persistance\obj\Debug\net8.0\PokemonG.39C84488.Up2Date
 C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.Persistance\obj\Debug\net8.0\PokemonGO_Backend.Persistance.genruntimeconfig.cache
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Persistance\bin\Debug\net8.0\PokemonGO_Backend.Persistance.deps.json
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Persistance\bin\Debug\net8.0\PokemonGO_Backend.Persistance.runtimeconfig.json
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Persistance\bin\Debug\net8.0\PokemonGO_Backend.Persistance.dll
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Persistance\bin\Debug\net8.0\PokemonGO_Backend.Persistance.pdb
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Persistance\bin\Debug\net8.0\PokemonGO_Backend.Domain.dll
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Persistance\bin\Debug\net8.0\PokemonGO_Backend.Domain.pdb
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Persistance\obj\Debug\net8.0\PokemonGO_Backend.Persistance.csproj.AssemblyReference.cache
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Persistance\obj\Debug\net8.0\PokemonGO_Backend.Persistance.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Persistance\obj\Debug\net8.0\PokemonGO_Backend.Persistance.AssemblyInfoInputs.cache
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Persistance\obj\Debug\net8.0\PokemonGO_Backend.Persistance.AssemblyInfo.cs
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Persistance\obj\Debug\net8.0\PokemonGO_Backend.Persistance.csproj.CoreCompileInputs.cache
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Persistance\obj\Debug\net8.0\PokemonGO_Backend.Persistance.sourcelink.json
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Persistance\obj\Debug\net8.0\PokemonG.39C84488.Up2Date
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Persistance\obj\Debug\net8.0\PokemonGO_Backend.Persistance.dll
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Persistance\obj\Debug\net8.0\refint\PokemonGO_Backend.Persistance.dll
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Persistance\obj\Debug\net8.0\PokemonGO_Backend.Persistance.pdb
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Persistance\obj\Debug\net8.0\PokemonGO_Backend.Persistance.genruntimeconfig.cache
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Persistance\obj\Debug\net8.0\ref\PokemonGO_Backend.Persistance.dll

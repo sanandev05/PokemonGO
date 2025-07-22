@@ -5,22 +5,22 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using PokemonGO_Backend.Persistance.Context;
+using PokemonGO_Backend.Persistance.DBContext;
 
 #nullable disable
 
 namespace PokemonGO_Backend.Persistance.Migrations
 {
-    [DbContext(typeof(AppDbContext))]
-    [Migration("20250720181730_InitialCreate")]
-    partial class InitialCreate
+    [DbContext(typeof(PokemonGoDbContext))]
+    [Migration("20250722145404_PokemonsinAbilityChangedToNullable")]
+    partial class PokemonsinAbilityChangedToNullable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "9.0.7")
+                .HasAnnotation("ProductVersion", "8.0.18")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -206,6 +206,44 @@ namespace PokemonGO_Backend.Persistance.Migrations
                     b.ToTable("Locations");
                 });
 
+            modelBuilder.Entity("PokemonGO_Backend.Domain.Entities.LogData", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("Level")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Message")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RequestId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Source")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("LogDatas");
+                });
+
             modelBuilder.Entity("PokemonGO_Backend.Domain.Entities.Pokemon", b =>
                 {
                     b.Property<int>("Id")
@@ -281,11 +319,10 @@ namespace PokemonGO_Backend.Persistance.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<decimal>("Damage")
+                        .HasColumnType("decimal(18,2)");
 
-                    b.Property<string>("Effect")
+                    b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -295,9 +332,6 @@ namespace PokemonGO_Backend.Persistance.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<decimal>("Power")
-                        .HasColumnType("decimal(18,2)");
 
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("datetime2");
@@ -318,8 +352,16 @@ namespace PokemonGO_Backend.Persistance.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("PokemonId")
                         .HasColumnType("int");
@@ -348,6 +390,9 @@ namespace PokemonGO_Backend.Persistance.Migrations
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("EndDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
@@ -390,9 +435,8 @@ namespace PokemonGO_Backend.Persistance.Migrations
                     b.Property<int>("Experience")
                         .HasColumnType("int");
 
-                    b.Property<string>("Gold")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<decimal>("Gold")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
@@ -458,13 +502,13 @@ namespace PokemonGO_Backend.Persistance.Migrations
                     b.HasOne("PokemonGO_Backend.Domain.Entities.Trainer", "Trainer1")
                         .WithMany()
                         .HasForeignKey("Trainer1Id")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("PokemonGO_Backend.Domain.Entities.Trainer", "Trainer2")
                         .WithMany()
                         .HasForeignKey("Trainer2Id")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("BattleLocation");

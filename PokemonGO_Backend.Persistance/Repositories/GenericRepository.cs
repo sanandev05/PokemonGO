@@ -33,12 +33,12 @@ namespace PokemonGO_Backend.Persistance.Repositories
 
         public async Task<IQueryable<TEntity>> GetAllAsync()
         {
-            return await Task.FromResult(_dbSet.AsQueryable());
+            return await Task.FromResult(_dbSet.AsQueryable().Where(x=>!x.IsDeleted));
         }
 
         public async Task<TEntity?> GetByIdAsync(int id)
         {
-            return await _dbSet.FindAsync(id);
+            return await _dbSet.FirstOrDefaultAsync(x=>x.Id==id&&!x.IsDeleted);
         }
 
         public async Task<TEntity> UpdateAsync(TEntity entity)

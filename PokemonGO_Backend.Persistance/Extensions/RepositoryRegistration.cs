@@ -7,7 +7,7 @@ namespace PokemonGO_Backend.Persistance.Extensions
 {
     public static class RepositoryRegistration
     {
-        public static IServiceCollection AddRepositoryRegistration(IServiceCollection services)
+        public static IServiceCollection AddRepositoryRegistration(this IServiceCollection services)
         {
             services.AddScoped(typeof(IGenericRepository<>),typeof(GenericRepository<>));
             services.AddSingleton<IGenericRepository<LogData>, GenericRepository<LogData>>();

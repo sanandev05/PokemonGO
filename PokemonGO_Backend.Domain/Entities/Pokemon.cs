@@ -10,8 +10,8 @@
         public int MaxHP { get; set; }       
         public int CurrentHP { get; set; }   
 
-        public int TrainerId { get; set; }
-        public Trainer Trainer { get; set; }
+        public int? TrainerId { get; set; }
+        public Trainer? Trainer { get; set; }
 
         public ICollection<PokemonAbility> Abilities { get; set; }
         public ICollection<PokemonCategory> Categories { get; set; }

@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace PokemonGO_Backend.Persistance.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class InitDB : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -50,6 +50,26 @@ namespace PokemonGO_Backend.Persistance.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "LogDatas",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Level = table.Column<int>(type: "int", nullable: false),
+                    Message = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Source = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    UserId = table.Column<int>(type: "int", nullable: true),
+                    RequestId = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_LogDatas", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "PokemonAbilities",
                 columns: table => new
                 {
@@ -57,8 +77,7 @@ namespace PokemonGO_Backend.Persistance.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Effect = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Power = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    Damage = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     Accuracy = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
@@ -78,6 +97,7 @@ namespace PokemonGO_Backend.Persistance.Migrations
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     StartDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    EndDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     LocationId = table.Column<int>(type: "int", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
@@ -104,7 +124,7 @@ namespace PokemonGO_Backend.Persistance.Migrations
                     AvatarUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Level = table.Column<int>(type: "int", nullable: false),
                     Experience = table.Column<int>(type: "int", nullable: false),
-                    Gold = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Gold = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     TournamentId = table.Column<int>(type: "int", nullable: true),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
@@ -175,13 +195,13 @@ namespace PokemonGO_Backend.Persistance.Migrations
                         column: x => x.Trainer1Id,
                         principalTable: "Trainers",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Battles_Trainers_Trainer2Id",
                         column: x => x.Trainer2Id,
                         principalTable: "Trainers",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -263,6 +283,8 @@ namespace PokemonGO_Backend.Persistance.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PokemonId = table.Column<int>(type: "int", nullable: true),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
@@ -373,6 +395,9 @@ namespace PokemonGO_Backend.Persistance.Migrations
         {
             migrationBuilder.DropTable(
                 name: "BadgeTrainer");
+
+            migrationBuilder.DropTable(
+                name: "LogDatas");
 
             migrationBuilder.DropTable(
                 name: "PokemonCategories");

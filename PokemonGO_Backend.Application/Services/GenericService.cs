@@ -33,7 +33,8 @@ namespace PokemonGO_Backend.Application.Services
             var entity = await _repository.GetByIdAsync(id);
             if (entity == null) return false;
 
-            await _repository.DeleteAsync(entity.Id);
+            entity.IsDeleted = true;
+            await _repository.UpdateAsync(entity);
             await UnitOfWork.SaveChangesAsync();
             return true;
         }

@@ -7,6 +7,6 @@
         public decimal Damage { get; set; }
         public decimal Accuracy { get; set; }
 
-        public ICollection<Pokemon> Pokemons { get; set; }
+        public ICollection<Pokemon>? Pokemons { get; set; }
     }
 }

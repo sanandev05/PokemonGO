@@ -21,3 +21,15 @@ C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.Domain\ob
 C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.Domain\obj\Debug\net8.0\refint\PokemonGO_Backend.Domain.dll
 C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.Domain\obj\Debug\net8.0\PokemonGO_Backend.Domain.pdb
 C:\Users\sananahu\Desktop\Projects\PokemonGO\Backend\PokemonGO_Backend.Domain\obj\Debug\net8.0\ref\PokemonGO_Backend.Domain.dll
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Domain\bin\Debug\net8.0\PokemonGO_Backend.Domain.deps.json
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Domain\bin\Debug\net8.0\PokemonGO_Backend.Domain.dll
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Domain\bin\Debug\net8.0\PokemonGO_Backend.Domain.pdb
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Domain\obj\Debug\net8.0\PokemonGO_Backend.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Domain\obj\Debug\net8.0\PokemonGO_Backend.Domain.AssemblyInfoInputs.cache
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Domain\obj\Debug\net8.0\PokemonGO_Backend.Domain.AssemblyInfo.cs
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Domain\obj\Debug\net8.0\PokemonGO_Backend.Domain.csproj.CoreCompileInputs.cache
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Domain\obj\Debug\net8.0\PokemonGO_Backend.Domain.sourcelink.json
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Domain\obj\Debug\net8.0\PokemonGO_Backend.Domain.dll
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Domain\obj\Debug\net8.0\refint\PokemonGO_Backend.Domain.dll
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Domain\obj\Debug\net8.0\PokemonGO_Backend.Domain.pdb
+D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Domain\obj\Debug\net8.0\ref\PokemonGO_Backend.Domain.dll

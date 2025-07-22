@@ -17,5 +17,20 @@ namespace PokemonGO_Backend.Persistance.DBContext
         public DbSet<Trainer> Trainers { get; set; }
         public DbSet<Battle> Battles { get; set; }
         public DbSet<Badge> Badges { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Battle>()
+                .HasOne(b => b.Trainer1)
+                .WithMany()
+                .HasForeignKey(b => b.Trainer1Id)
+                .OnDelete(DeleteBehavior.Restrict); 
+
+            modelBuilder.Entity<Battle>()
+                .HasOne(b => b.Trainer2)
+                .WithMany()
+                .HasForeignKey(b => b.Trainer2Id)
+                .OnDelete(DeleteBehavior.Restrict); 
+        }
+
     }
 }
