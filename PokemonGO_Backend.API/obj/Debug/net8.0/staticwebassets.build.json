@@ -1,12 +1,11 @@
 {
   "Version": 1,
-  "Hash": "QEsb3dTzEIwDZehx5ZG9saH4d0WZ40jWi+qmLmeSiAg=",
+  "Hash": "rODJl+oontHkPn/KVGC67BWfxcLhtdZ2Pb1NYvRn1Y8=",
   "Source": "PokemonGO_Backend.API",
   "BasePath": "_content/PokemonGO_Backend.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": []
 }

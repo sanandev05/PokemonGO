@@ -152,7 +152,7 @@ namespace PokemonGO_Backend.Persistance.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("TrainerId")
+                    b.Property<int?>("TrainerId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("UpdatedAt")
@@ -252,6 +252,9 @@ namespace PokemonGO_Backend.Persistance.Migrations
                     b.Property<int?>("BattleId")
                         .HasColumnType("int");
 
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
@@ -261,9 +264,6 @@ namespace PokemonGO_Backend.Persistance.Migrations
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("GymId")
-                        .HasColumnType("int");
 
                     b.Property<string>("ImageUrl")
                         .IsRequired()
@@ -282,9 +282,6 @@ namespace PokemonGO_Backend.Persistance.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("TrainerId")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("datetime2");
 
@@ -295,9 +292,7 @@ namespace PokemonGO_Backend.Persistance.Migrations
 
                     b.HasIndex("BattleId");
 
-                    b.HasIndex("GymId");
-
-                    b.HasIndex("TrainerId");
+                    b.HasIndex("CategoryId");
 
                     b.ToTable("Pokemons");
                 });
@@ -360,15 +355,10 @@ namespace PokemonGO_Backend.Persistance.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("PokemonId")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("PokemonId");
 
                     b.ToTable("PokemonCategories");
                 });
@@ -423,7 +413,6 @@ namespace PokemonGO_Backend.Persistance.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("AvatarUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreatedAt")
@@ -471,6 +460,21 @@ namespace PokemonGO_Backend.Persistance.Migrations
                     b.HasIndex("PokemonsId");
 
                     b.ToTable("PokemonPokemonAbility");
+                });
+
+            modelBuilder.Entity("PokemonTrainer", b =>
+                {
+                    b.Property<int>("PokemonsId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TrainersId")
+                        .HasColumnType("int");
+
+                    b.HasKey("PokemonsId", "TrainersId");
+
+                    b.HasIndex("TrainersId");
+
+                    b.ToTable("PokemonTrainer");
                 });
 
             modelBuilder.Entity("BadgeTrainer", b =>
@@ -525,9 +529,7 @@ namespace PokemonGO_Backend.Persistance.Migrations
 
                     b.HasOne("PokemonGO_Backend.Domain.Entities.Trainer", "Trainer")
                         .WithMany()
-                        .HasForeignKey("TrainerId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("TrainerId");
 
                     b.Navigation("Location");
 
@@ -540,22 +542,13 @@ namespace PokemonGO_Backend.Persistance.Migrations
                         .WithMany("PokemonsUsed")
                         .HasForeignKey("BattleId");
 
-                    b.HasOne("PokemonGO_Backend.Domain.Entities.Gym", null)
+                    b.HasOne("PokemonGO_Backend.Domain.Entities.PokemonCategory", "Category")
                         .WithMany("Pokemons")
-                        .HasForeignKey("GymId");
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.HasOne("PokemonGO_Backend.Domain.Entities.Trainer", "Trainer")
-                        .WithMany("Pokemons")
-                        .HasForeignKey("TrainerId");
-
-                    b.Navigation("Trainer");
-                });
-
-            modelBuilder.Entity("PokemonGO_Backend.Domain.Entities.PokemonCategory", b =>
-                {
-                    b.HasOne("PokemonGO_Backend.Domain.Entities.Pokemon", null)
-                        .WithMany("Categories")
-                        .HasForeignKey("PokemonId");
+                    b.Navigation("Category");
                 });
 
             modelBuilder.Entity("PokemonGO_Backend.Domain.Entities.Tournament", b =>
@@ -591,29 +584,34 @@ namespace PokemonGO_Backend.Persistance.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("PokemonTrainer", b =>
+                {
+                    b.HasOne("PokemonGO_Backend.Domain.Entities.Pokemon", null)
+                        .WithMany()
+                        .HasForeignKey("PokemonsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("PokemonGO_Backend.Domain.Entities.Trainer", null)
+                        .WithMany()
+                        .HasForeignKey("TrainersId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("PokemonGO_Backend.Domain.Entities.Battle", b =>
                 {
                     b.Navigation("PokemonsUsed");
                 });
 
-            modelBuilder.Entity("PokemonGO_Backend.Domain.Entities.Gym", b =>
+            modelBuilder.Entity("PokemonGO_Backend.Domain.Entities.PokemonCategory", b =>
                 {
                     b.Navigation("Pokemons");
-                });
-
-            modelBuilder.Entity("PokemonGO_Backend.Domain.Entities.Pokemon", b =>
-                {
-                    b.Navigation("Categories");
                 });
 
             modelBuilder.Entity("PokemonGO_Backend.Domain.Entities.Tournament", b =>
                 {
                     b.Navigation("Trainers");
-                });
-
-            modelBuilder.Entity("PokemonGO_Backend.Domain.Entities.Trainer", b =>
-                {
-                    b.Navigation("Pokemons");
                 });
 #pragma warning restore 612, 618
         }

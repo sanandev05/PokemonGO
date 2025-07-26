@@ -15,13 +15,14 @@ namespace PokemonGO_Backend.Application.Profiles
             CreateMap<Location, LocationDTO>().ReverseMap();
             CreateMap<LogData, LogDataDTO>().ReverseMap();
             CreateMap<Pokemon, PokemonDTO>()
-                        .ForMember(dest => dest.AbilityIds, opt => opt.MapFrom(src => src.Abilities.Select(a => a.Id).ToList()))
-                        .ForMember(dest => dest.CategoryIds, opt => opt.MapFrom(src => src.Categories.Select(c => c.Id).ToList()))
-                        .ForMember(dest => dest.TrainerId, opt => opt.MapFrom(src => src.TrainerId))
-                        .ReverseMap()  // Enable reverse mapping (DTO -> Entity)
-                        .ForMember(dest => dest.Abilities, opt => opt.Ignore())  // Ignore navigation properties on reverse map
-                        .ForMember(dest => dest.Categories, opt => opt.Ignore())
-                        .ForMember(dest => dest.Trainer, opt => opt.Ignore());
+      .ForMember(dest => dest.TrainerIds,
+                 opt => opt.MapFrom(src => src.Trainers.Select(t => t.Id)));
+
+
+            CreateMap<PokemonDTO, Pokemon>()
+                .ForMember(dest => dest.Abilities, opt => opt.Ignore())
+                .ForMember(dest => dest.Trainers, opt => opt.Ignore());
+
             CreateMap<PokemonAbility, PokemonAbilityDTO>().ReverseMap();
             CreateMap<Tournament, TournamentDTO>().ReverseMap();
             CreateMap<Trainer, TrainerDTO>().ReverseMap();

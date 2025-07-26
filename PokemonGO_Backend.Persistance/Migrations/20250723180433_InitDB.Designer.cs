@@ -12,8 +12,8 @@ using PokemonGO_Backend.Persistance.DBContext;
 namespace PokemonGO_Backend.Persistance.Migrations
 {
     [DbContext(typeof(PokemonGoDbContext))]
-    [Migration("20250722145404_PokemonsinAbilityChangedToNullable")]
-    partial class PokemonsinAbilityChangedToNullable
+    [Migration("20250723180433_InitDB")]
+    partial class InitDB
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -255,6 +255,9 @@ namespace PokemonGO_Backend.Persistance.Migrations
                     b.Property<int?>("BattleId")
                         .HasColumnType("int");
 
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
@@ -285,7 +288,7 @@ namespace PokemonGO_Backend.Persistance.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("TrainerId")
+                    b.Property<int?>("TrainerId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("UpdatedAt")
@@ -297,6 +300,8 @@ namespace PokemonGO_Backend.Persistance.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("BattleId");
+
+                    b.HasIndex("CategoryId");
 
                     b.HasIndex("GymId");
 
@@ -363,15 +368,10 @@ namespace PokemonGO_Backend.Persistance.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("PokemonId")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("PokemonId");
 
                     b.ToTable("PokemonCategories");
                 });
@@ -543,24 +543,23 @@ namespace PokemonGO_Backend.Persistance.Migrations
                         .WithMany("PokemonsUsed")
                         .HasForeignKey("BattleId");
 
+                    b.HasOne("PokemonGO_Backend.Domain.Entities.PokemonCategory", "Category")
+                        .WithMany("Pokemons")
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("PokemonGO_Backend.Domain.Entities.Gym", null)
                         .WithMany("Pokemons")
                         .HasForeignKey("GymId");
 
                     b.HasOne("PokemonGO_Backend.Domain.Entities.Trainer", "Trainer")
                         .WithMany("Pokemons")
-                        .HasForeignKey("TrainerId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("TrainerId");
+
+                    b.Navigation("Category");
 
                     b.Navigation("Trainer");
-                });
-
-            modelBuilder.Entity("PokemonGO_Backend.Domain.Entities.PokemonCategory", b =>
-                {
-                    b.HasOne("PokemonGO_Backend.Domain.Entities.Pokemon", null)
-                        .WithMany("Categories")
-                        .HasForeignKey("PokemonId");
                 });
 
             modelBuilder.Entity("PokemonGO_Backend.Domain.Entities.Tournament", b =>
@@ -606,9 +605,9 @@ namespace PokemonGO_Backend.Persistance.Migrations
                     b.Navigation("Pokemons");
                 });
 
-            modelBuilder.Entity("PokemonGO_Backend.Domain.Entities.Pokemon", b =>
+            modelBuilder.Entity("PokemonGO_Backend.Domain.Entities.PokemonCategory", b =>
                 {
-                    b.Navigation("Categories");
+                    b.Navigation("Pokemons");
                 });
 
             modelBuilder.Entity("PokemonGO_Backend.Domain.Entities.Tournament", b =>

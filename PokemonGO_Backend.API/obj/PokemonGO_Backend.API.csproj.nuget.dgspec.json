@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Visual Studio Projects\\PokemonGO\\PokemonGO_Backend.API\\PokemonGO_Backend.API.csproj": {}
+    "C:\\Users\\Icomp\\source\\Code Aca Learning\\PokemonGO\\PokemonGO_Backend.API\\PokemonGO_Backend.API.csproj": {}
   },
   "projects": {
-    "D:\\Visual Studio Projects\\PokemonGO\\PokemonGO_Backend.API\\PokemonGO_Backend.API.csproj": {
+    "C:\\Users\\Icomp\\source\\Code Aca Learning\\PokemonGO\\PokemonGO_Backend.API\\PokemonGO_Backend.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Visual Studio Projects\\PokemonGO\\PokemonGO_Backend.API\\PokemonGO_Backend.API.csproj",
+        "projectUniqueName": "C:\\Users\\Icomp\\source\\Code Aca Learning\\PokemonGO\\PokemonGO_Backend.API\\PokemonGO_Backend.API.csproj",
         "projectName": "PokemonGO_Backend.API",
-        "projectPath": "D:\\Visual Studio Projects\\PokemonGO\\PokemonGO_Backend.API\\PokemonGO_Backend.API.csproj",
-        "packagesPath": "C:\\Users\\phili\\.nuget\\packages\\",
-        "outputPath": "D:\\Visual Studio Projects\\PokemonGO\\PokemonGO_Backend.API\\obj\\",
+        "projectPath": "C:\\Users\\Icomp\\source\\Code Aca Learning\\PokemonGO\\PokemonGO_Backend.API\\PokemonGO_Backend.API.csproj",
+        "packagesPath": "C:\\Users\\Icomp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Icomp\\source\\Code Aca Learning\\PokemonGO\\PokemonGO_Backend.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\phili\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Icomp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,17 +26,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Visual Studio Projects\\PokemonGO\\PokemonGO_Backend.Application\\PokemonGO_Backend.Application.csproj": {
-                "projectPath": "D:\\Visual Studio Projects\\PokemonGO\\PokemonGO_Backend.Application\\PokemonGO_Backend.Application.csproj"
+              "C:\\Users\\Icomp\\source\\Code Aca Learning\\PokemonGO\\PokemonGO_Backend.Application\\PokemonGO_Backend.Application.csproj": {
+                "projectPath": "C:\\Users\\Icomp\\source\\Code Aca Learning\\PokemonGO\\PokemonGO_Backend.Application\\PokemonGO_Backend.Application.csproj"
               },
-              "D:\\Visual Studio Projects\\PokemonGO\\PokemonGO_Backend.Persistance\\PokemonGO_Backend.Persistance.csproj": {
-                "projectPath": "D:\\Visual Studio Projects\\PokemonGO\\PokemonGO_Backend.Persistance\\PokemonGO_Backend.Persistance.csproj"
+              "C:\\Users\\Icomp\\source\\Code Aca Learning\\PokemonGO\\PokemonGO_Backend.Persistance\\PokemonGO_Backend.Persistance.csproj": {
+                "projectPath": "C:\\Users\\Icomp\\source\\Code Aca Learning\\PokemonGO\\PokemonGO_Backend.Persistance\\PokemonGO_Backend.Persistance.csproj"
               }
             }
           }
@@ -50,8 +51,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -103,24 +103,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Visual Studio Projects\\PokemonGO\\PokemonGO_Backend.Application\\PokemonGO_Backend.Application.csproj": {
+    "C:\\Users\\Icomp\\source\\Code Aca Learning\\PokemonGO\\PokemonGO_Backend.Application\\PokemonGO_Backend.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Visual Studio Projects\\PokemonGO\\PokemonGO_Backend.Application\\PokemonGO_Backend.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Icomp\\source\\Code Aca Learning\\PokemonGO\\PokemonGO_Backend.Application\\PokemonGO_Backend.Application.csproj",
         "projectName": "PokemonGO_Backend.Application",
-        "projectPath": "D:\\Visual Studio Projects\\PokemonGO\\PokemonGO_Backend.Application\\PokemonGO_Backend.Application.csproj",
-        "packagesPath": "C:\\Users\\phili\\.nuget\\packages\\",
-        "outputPath": "D:\\Visual Studio Projects\\PokemonGO\\PokemonGO_Backend.Application\\obj\\",
+        "projectPath": "C:\\Users\\Icomp\\source\\Code Aca Learning\\PokemonGO\\PokemonGO_Backend.Application\\PokemonGO_Backend.Application.csproj",
+        "packagesPath": "C:\\Users\\Icomp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Icomp\\source\\Code Aca Learning\\PokemonGO\\PokemonGO_Backend.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\phili\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Icomp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -129,14 +129,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Visual Studio Projects\\PokemonGO\\PokemonGO_Backend.Contract\\PokemonGO_Backend.Contract.csproj": {
-                "projectPath": "D:\\Visual Studio Projects\\PokemonGO\\PokemonGO_Backend.Contract\\PokemonGO_Backend.Contract.csproj"
+              "C:\\Users\\Icomp\\source\\Code Aca Learning\\PokemonGO\\PokemonGO_Backend.Contract\\PokemonGO_Backend.Contract.csproj": {
+                "projectPath": "C:\\Users\\Icomp\\source\\Code Aca Learning\\PokemonGO\\PokemonGO_Backend.Contract\\PokemonGO_Backend.Contract.csproj"
               }
             }
           }
@@ -150,8 +151,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -186,24 +186,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Visual Studio Projects\\PokemonGO\\PokemonGO_Backend.Contract\\PokemonGO_Backend.Contract.csproj": {
+    "C:\\Users\\Icomp\\source\\Code Aca Learning\\PokemonGO\\PokemonGO_Backend.Contract\\PokemonGO_Backend.Contract.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Visual Studio Projects\\PokemonGO\\PokemonGO_Backend.Contract\\PokemonGO_Backend.Contract.csproj",
+        "projectUniqueName": "C:\\Users\\Icomp\\source\\Code Aca Learning\\PokemonGO\\PokemonGO_Backend.Contract\\PokemonGO_Backend.Contract.csproj",
         "projectName": "PokemonGO_Backend.Contract",
-        "projectPath": "D:\\Visual Studio Projects\\PokemonGO\\PokemonGO_Backend.Contract\\PokemonGO_Backend.Contract.csproj",
-        "packagesPath": "C:\\Users\\phili\\.nuget\\packages\\",
-        "outputPath": "D:\\Visual Studio Projects\\PokemonGO\\PokemonGO_Backend.Contract\\obj\\",
+        "projectPath": "C:\\Users\\Icomp\\source\\Code Aca Learning\\PokemonGO\\PokemonGO_Backend.Contract\\PokemonGO_Backend.Contract.csproj",
+        "packagesPath": "C:\\Users\\Icomp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Icomp\\source\\Code Aca Learning\\PokemonGO\\PokemonGO_Backend.Contract\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\phili\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Icomp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -212,14 +212,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Visual Studio Projects\\PokemonGO\\PokemonGO_Backend.Domain\\PokemonGO_Backend.Domain.csproj": {
-                "projectPath": "D:\\Visual Studio Projects\\PokemonGO\\PokemonGO_Backend.Domain\\PokemonGO_Backend.Domain.csproj"
+              "C:\\Users\\Icomp\\source\\Code Aca Learning\\PokemonGO\\PokemonGO_Backend.Domain\\PokemonGO_Backend.Domain.csproj": {
+                "projectPath": "C:\\Users\\Icomp\\source\\Code Aca Learning\\PokemonGO\\PokemonGO_Backend.Domain\\PokemonGO_Backend.Domain.csproj"
               }
             }
           }
@@ -233,8 +234,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -255,24 +255,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Visual Studio Projects\\PokemonGO\\PokemonGO_Backend.Domain\\PokemonGO_Backend.Domain.csproj": {
+    "C:\\Users\\Icomp\\source\\Code Aca Learning\\PokemonGO\\PokemonGO_Backend.Domain\\PokemonGO_Backend.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Visual Studio Projects\\PokemonGO\\PokemonGO_Backend.Domain\\PokemonGO_Backend.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Icomp\\source\\Code Aca Learning\\PokemonGO\\PokemonGO_Backend.Domain\\PokemonGO_Backend.Domain.csproj",
         "projectName": "PokemonGO_Backend.Domain",
-        "projectPath": "D:\\Visual Studio Projects\\PokemonGO\\PokemonGO_Backend.Domain\\PokemonGO_Backend.Domain.csproj",
-        "packagesPath": "C:\\Users\\phili\\.nuget\\packages\\",
-        "outputPath": "D:\\Visual Studio Projects\\PokemonGO\\PokemonGO_Backend.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Icomp\\source\\Code Aca Learning\\PokemonGO\\PokemonGO_Backend.Domain\\PokemonGO_Backend.Domain.csproj",
+        "packagesPath": "C:\\Users\\Icomp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Icomp\\source\\Code Aca Learning\\PokemonGO\\PokemonGO_Backend.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\phili\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Icomp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -281,6 +281,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -298,8 +299,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -320,24 +320,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Visual Studio Projects\\PokemonGO\\PokemonGO_Backend.Persistance\\PokemonGO_Backend.Persistance.csproj": {
+    "C:\\Users\\Icomp\\source\\Code Aca Learning\\PokemonGO\\PokemonGO_Backend.Persistance\\PokemonGO_Backend.Persistance.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Visual Studio Projects\\PokemonGO\\PokemonGO_Backend.Persistance\\PokemonGO_Backend.Persistance.csproj",
+        "projectUniqueName": "C:\\Users\\Icomp\\source\\Code Aca Learning\\PokemonGO\\PokemonGO_Backend.Persistance\\PokemonGO_Backend.Persistance.csproj",
         "projectName": "PokemonGO_Backend.Persistance",
-        "projectPath": "D:\\Visual Studio Projects\\PokemonGO\\PokemonGO_Backend.Persistance\\PokemonGO_Backend.Persistance.csproj",
-        "packagesPath": "C:\\Users\\phili\\.nuget\\packages\\",
-        "outputPath": "D:\\Visual Studio Projects\\PokemonGO\\PokemonGO_Backend.Persistance\\obj\\",
+        "projectPath": "C:\\Users\\Icomp\\source\\Code Aca Learning\\PokemonGO\\PokemonGO_Backend.Persistance\\PokemonGO_Backend.Persistance.csproj",
+        "packagesPath": "C:\\Users\\Icomp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Icomp\\source\\Code Aca Learning\\PokemonGO\\PokemonGO_Backend.Persistance\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\phili\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Icomp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -346,14 +346,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Visual Studio Projects\\PokemonGO\\PokemonGO_Backend.Domain\\PokemonGO_Backend.Domain.csproj": {
-                "projectPath": "D:\\Visual Studio Projects\\PokemonGO\\PokemonGO_Backend.Domain\\PokemonGO_Backend.Domain.csproj"
+              "C:\\Users\\Icomp\\source\\Code Aca Learning\\PokemonGO\\PokemonGO_Backend.Domain\\PokemonGO_Backend.Domain.csproj": {
+                "projectPath": "C:\\Users\\Icomp\\source\\Code Aca Learning\\PokemonGO\\PokemonGO_Backend.Domain\\PokemonGO_Backend.Domain.csproj"
               }
             }
           }
@@ -367,8 +368,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -405,7 +405,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

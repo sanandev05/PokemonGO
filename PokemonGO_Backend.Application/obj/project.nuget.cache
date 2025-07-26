@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Ns5EiJYiNzU=",
+  "dgSpecHash": "stmvELbwq+Y=",
   "success": true,
-  "projectFilePath": "D:\\Visual Studio Projects\\PokemonGO\\PokemonGO_Backend.Application\\PokemonGO_Backend.Application.csproj",
+  "projectFilePath": "C:\\Users\\Icomp\\source\\Code Aca Learning\\PokemonGO\\PokemonGO_Backend.Application\\PokemonGO_Backend.Application.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\phili\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
-    "C:\\Users\\phili\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512",
-    "C:\\Users\\phili\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
-    "C:\\Users\\phili\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512"
+    "C:\\Users\\Icomp\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\Icomp\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512",
+    "C:\\Users\\Icomp\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Icomp\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512"
   ],
   "logs": []
 }

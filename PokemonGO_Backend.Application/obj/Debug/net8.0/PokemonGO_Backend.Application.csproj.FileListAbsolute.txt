@@ -45,3 +45,10 @@ D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Application\obj\Debug\net8
 D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Application\obj\Debug\net8.0\refint\PokemonGO_Backend.Application.dll
 D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Application\obj\Debug\net8.0\PokemonGO_Backend.Application.pdb
 D:\Visual Studio Projects\PokemonGO\PokemonGO_Backend.Application\obj\Debug\net8.0\ref\PokemonGO_Backend.Application.dll
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.Application\bin\Debug\net8.0\PokemonGO_Backend.Contract.dll
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.Application\bin\Debug\net8.0\PokemonGO_Backend.Domain.dll
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.Application\bin\Debug\net8.0\PokemonGO_Backend.Contract.pdb
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.Application\bin\Debug\net8.0\PokemonGO_Backend.Domain.pdb
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.Application\obj\Debug\net8.0\PokemonGO_Backend.Application.csproj.AssemblyReference.cache
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.Application\obj\Debug\net8.0\PokemonGO_Backend.Application.sourcelink.json
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.Application\obj\Debug\net8.0\PokemonG.E69BD47D.Up2Date

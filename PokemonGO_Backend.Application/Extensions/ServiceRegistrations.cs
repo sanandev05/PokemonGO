@@ -10,6 +10,8 @@ namespace PokemonGO_Backend.Application.Extensions
         {
             services.AddScoped(typeof(IGenericService<,>),typeof(GenericService<,>));
             services.AddScoped<IPokemonService, PokemonService>();
+            services.AddScoped<IGymService, GymService>();
+            services.AddScoped<ITrainerService, TrainerService>();
             return services;
         }
     }

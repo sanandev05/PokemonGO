@@ -11,6 +11,9 @@ namespace PokemonGO_Backend.API.Controllers
     public class PokemonController : ControllerBase
     {
         private IGenericService<Pokemon,PokemonDTO> _service;
+        private IGenericService<Trainer,TrainerDTO> _trainerService;
+        private IGenericService<PokemonAbility, PokemonAbilityDTO> _abilityService;
+        private IGenericService<PokemonCategory, PokemonCategoryDTO> _categoryService;
         private IPokemonService _pokemonService;
         public PokemonController(IGenericService<Pokemon, PokemonDTO> service, IPokemonService pokemonService)
         {
@@ -41,8 +44,16 @@ namespace PokemonGO_Backend.API.Controllers
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
 
+            foreach (var abilityId in dto.AbilityIds)
+            {
+                if (abilityId <= 0)
+                {
+                    ModelState.AddModelError("AbilityIds", "Ability ID must be greater than zero.");
+                    return BadRequest(ModelState);
+                }
+            }
             await _pokemonService.AddAsync(dto);
-            return CreatedAtAction(nameof(Get), new { id = dto.Id },dto);
+            return Ok(dto);
         }
 
 

@@ -1,6 +1,4 @@
-﻿using PokemonGO_Backend.Domain.Entities;
-
-namespace PokemonGO_Backend.Contract.DTOs
+﻿namespace PokemonGO_Backend.Contract.DTOs
 {
     public class PokemonAbilityDTO
     {

@@ -1,7 +1,7 @@
 ﻿
 namespace PokemonGO_Backend.Contract.DTOs
 {
-    public class PokemonDTO
+    public record PokemonDTO
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -12,9 +12,9 @@ namespace PokemonGO_Backend.Contract.DTOs
         public int MaxHP { get; set; }
         public int CurrentHP { get; set; }
 
-        public int? TrainerId { get; set; }
+        public int CategoryId { get; set; }
+        public List<int>? TrainerIds { get; set; }
 
         public List<int> AbilityIds { get; set; }
-        public List<int> CategoryIds { get; set; }
     }
 }

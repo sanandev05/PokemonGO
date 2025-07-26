@@ -10,10 +10,10 @@
         public int LocationId { get; set; }
         public Location Location { get; set; }
 
-        public int TrainerId { get; set; }
-        public Trainer Trainer { get; set; }
+        public int? TrainerId { get; set; }
+        public Trainer? Trainer { get; set; }
 
-        public ICollection<Pokemon> Pokemons { get; set; }
+       // public ICollection<Pokemon> Pokemons { get; set; }
     }
    
 }

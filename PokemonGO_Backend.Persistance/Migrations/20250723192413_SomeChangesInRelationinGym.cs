@@ -5,26 +5,26 @@
 namespace PokemonGO_Backend.Persistance.Migrations
 {
     /// <inheritdoc />
-    public partial class minorchanges : Migration
+    public partial class SomeChangesInRelationinGym : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropForeignKey(
-                name: "FK_Pokemons_Trainers_TrainerId",
-                table: "Pokemons");
+                name: "FK_Gyms_Trainers_TrainerId",
+                table: "Gyms");
 
             migrationBuilder.AlterColumn<int>(
                 name: "TrainerId",
-                table: "Pokemons",
+                table: "Gyms",
                 type: "int",
                 nullable: true,
                 oldClrType: typeof(int),
                 oldType: "int");
 
             migrationBuilder.AddForeignKey(
-                name: "FK_Pokemons_Trainers_TrainerId",
-                table: "Pokemons",
+                name: "FK_Gyms_Trainers_TrainerId",
+                table: "Gyms",
                 column: "TrainerId",
                 principalTable: "Trainers",
                 principalColumn: "Id");
@@ -34,12 +34,12 @@ namespace PokemonGO_Backend.Persistance.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropForeignKey(
-                name: "FK_Pokemons_Trainers_TrainerId",
-                table: "Pokemons");
+                name: "FK_Gyms_Trainers_TrainerId",
+                table: "Gyms");
 
             migrationBuilder.AlterColumn<int>(
                 name: "TrainerId",
-                table: "Pokemons",
+                table: "Gyms",
                 type: "int",
                 nullable: false,
                 defaultValue: 0,
@@ -48,8 +48,8 @@ namespace PokemonGO_Backend.Persistance.Migrations
                 oldNullable: true);
 
             migrationBuilder.AddForeignKey(
-                name: "FK_Pokemons_Trainers_TrainerId",
-                table: "Pokemons",
+                name: "FK_Gyms_Trainers_TrainerId",
+                table: "Gyms",
                 column: "TrainerId",
                 principalTable: "Trainers",
                 principalColumn: "Id",

@@ -1,6 +1,6 @@
 ﻿namespace PokemonGO_Backend.Contract.DTOs
 {
-    public class PokemonCategoryDTO
+    public record PokemonCategoryDTO
     {
         public int Id { get; set; }
         public string Name { get; set; }

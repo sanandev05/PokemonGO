@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PokemonGO_Backend.Contract")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+abcc1bbf5faa82193c7cb1730e61b4847d971cd1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a28f77bf5dad3d8baf6a10b54e951806823ff53")]
 [assembly: System.Reflection.AssemblyProductAttribute("PokemonGO_Backend.Contract")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PokemonGO_Backend.Contract")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

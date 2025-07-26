@@ -89,6 +89,23 @@ namespace PokemonGO_Backend.Persistance.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "PokemonCategories",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_PokemonCategories", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Tournaments",
                 columns: table => new
                 {
@@ -249,7 +266,8 @@ namespace PokemonGO_Backend.Persistance.Migrations
                     Level = table.Column<int>(type: "int", nullable: false),
                     MaxHP = table.Column<int>(type: "int", nullable: false),
                     CurrentHP = table.Column<int>(type: "int", nullable: false),
-                    TrainerId = table.Column<int>(type: "int", nullable: false),
+                    TrainerId = table.Column<int>(type: "int", nullable: true),
+                    CategoryId = table.Column<int>(type: "int", nullable: false),
                     BattleId = table.Column<int>(type: "int", nullable: true),
                     GymId = table.Column<int>(type: "int", nullable: true),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
@@ -270,33 +288,15 @@ namespace PokemonGO_Backend.Persistance.Migrations
                         principalTable: "Gyms",
                         principalColumn: "Id");
                     table.ForeignKey(
+                        name: "FK_Pokemons_PokemonCategories_CategoryId",
+                        column: x => x.CategoryId,
+                        principalTable: "PokemonCategories",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
                         name: "FK_Pokemons_Trainers_TrainerId",
                         column: x => x.TrainerId,
                         principalTable: "Trainers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "PokemonCategories",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    PokemonId = table.Column<int>(type: "int", nullable: true),
-                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    IsDeleted = table.Column<bool>(type: "bit", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_PokemonCategories", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_PokemonCategories_Pokemons_PokemonId",
-                        column: x => x.PokemonId,
-                        principalTable: "Pokemons",
                         principalColumn: "Id");
                 });
 
@@ -355,11 +355,6 @@ namespace PokemonGO_Backend.Persistance.Migrations
                 column: "TrainerId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_PokemonCategories_PokemonId",
-                table: "PokemonCategories",
-                column: "PokemonId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_PokemonPokemonAbility_PokemonsId",
                 table: "PokemonPokemonAbility",
                 column: "PokemonsId");
@@ -368,6 +363,11 @@ namespace PokemonGO_Backend.Persistance.Migrations
                 name: "IX_Pokemons_BattleId",
                 table: "Pokemons",
                 column: "BattleId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Pokemons_CategoryId",
+                table: "Pokemons",
+                column: "CategoryId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Pokemons_GymId",
@@ -400,9 +400,6 @@ namespace PokemonGO_Backend.Persistance.Migrations
                 name: "LogDatas");
 
             migrationBuilder.DropTable(
-                name: "PokemonCategories");
-
-            migrationBuilder.DropTable(
                 name: "PokemonPokemonAbility");
 
             migrationBuilder.DropTable(
@@ -419,6 +416,9 @@ namespace PokemonGO_Backend.Persistance.Migrations
 
             migrationBuilder.DropTable(
                 name: "Gyms");
+
+            migrationBuilder.DropTable(
+                name: "PokemonCategories");
 
             migrationBuilder.DropTable(
                 name: "Trainers");

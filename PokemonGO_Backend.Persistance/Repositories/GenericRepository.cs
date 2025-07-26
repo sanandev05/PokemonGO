@@ -2,6 +2,7 @@
 using PokemonGO_Backend.Domain.Entities;
 using PokemonGO_Backend.Domain.Repositories;
 using PokemonGO_Backend.Persistance.DBContext;
+using System.Linq.Expressions;
 
 namespace PokemonGO_Backend.Persistance.Repositories
 {
@@ -31,14 +32,33 @@ namespace PokemonGO_Backend.Persistance.Repositories
             return true;
         }
 
-        public async Task<IQueryable<TEntity>> GetAllAsync()
+        public async Task<List<TEntity>> GetAllAsync(Expression<Func<TEntity, bool>> filter = null, params Expression<Func<TEntity, object>>[] includes)
         {
-            return await Task.FromResult(_dbSet.AsQueryable().Where(x=>!x.IsDeleted));
+            IQueryable<TEntity> query = _dbSet;
+
+            if (filter != null)
+            {
+                query = query.Where(filter);
+            }
+
+            if (includes != null)
+            {
+                query = includes.Aggregate(query, (current, include) => current.Include(include));
+            }
+
+            return await query.Where(x => !x.IsDeleted).ToListAsync();
         }
 
-        public async Task<TEntity?> GetByIdAsync(int id)
+        public async Task<TEntity?> GetByIdAsync(int id, params Expression<Func<TEntity, object>>[] includes)
         {
-            return await _dbSet.FirstOrDefaultAsync(x=>x.Id==id&&!x.IsDeleted);
+            IQueryable<TEntity> query = _dbSet;
+
+            if (includes != null)
+            {
+                query = includes.Aggregate(query, (current, include) => current.Include(include));
+            }
+
+            return await query.FirstOrDefaultAsync(x => x.Id == id && !x.IsDeleted);
         }
 
         public async Task<TEntity> UpdateAsync(TEntity entity)
