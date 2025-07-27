@@ -6,6 +6,8 @@
         public string? AvatarUrl { get; set; }
         public int Level { get; set; }
         public int Experience { get; set; }
+        public int MaxXP { get; set; }
+        public int CurrentXP { get; set; }
         public decimal Gold { get; set; }
 
 

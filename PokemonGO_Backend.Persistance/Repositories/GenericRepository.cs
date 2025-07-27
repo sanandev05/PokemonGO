@@ -27,8 +27,8 @@ namespace PokemonGO_Backend.Persistance.Repositories
         {
             var entity = await _dbSet.FindAsync(id);
             if (entity == null) return false;
-
-            _dbSet.Remove(entity);
+            entity.IsDeleted = true;
+            _dbSet.Update(entity);
             return true;
         }
 

@@ -53,6 +53,8 @@ namespace PokemonGO_Backend.Application.Services
                     }
                 }
             }
+            trainer.CurrentXP = 0; 
+            trainer.MaxXP = 1000;
             Random random = new Random();
             await _repository.AddAsync(trainer);
             await _unitOfWork.SaveChangesAsync();
