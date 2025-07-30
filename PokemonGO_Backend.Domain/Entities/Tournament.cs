@@ -2,12 +2,17 @@
 {
     public class Tournament : BaseEntity
     {
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public DateTime StartDate { get; set; } = DateTime.UtcNow;
+        public string Name { get; set; } = null!;
+        public string Description { get; set; } = null!;
+
+        public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
 
-        public Location Location { get; set; }
-        public ICollection<Trainer> Trainers { get; set; }
+        public int? LocationId { get; set; }
+        public Location Location { get; set; } = null!;
+
+        // Many-to-many relationship with Trainers
+        public ICollection<Trainer> Trainers { get; set; } = new List<Trainer>();
     }
+
 }

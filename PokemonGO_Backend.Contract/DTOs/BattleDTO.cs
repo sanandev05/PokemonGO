@@ -10,11 +10,11 @@ namespace PokemonGO_Backend.Contract.DTOs
         public DateTime? EndedAt { get; set; }
         public BattleResult Result { get; set; }
 
-        public int LocationId { get; set; }
+        public int? LocationId { get; set; }
 
-        public int Trainer1Id { get; set; }
+        public int? Trainer1Id { get; set; }
 
-        public int Trainer2Id { get; set; }
+        public int? Trainer2Id { get; set; }
 
         public List<int> PokemonsUsedIds { get; set; }
     }

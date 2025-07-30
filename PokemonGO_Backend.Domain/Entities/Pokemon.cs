@@ -8,7 +8,8 @@
         public int XP { get; set; }
         public int Level { get; set; }
         public int MaxHP { get; set; }       
-        public int CurrentHP { get; set; }   
+        public int CurrentHP { get; set; }
+        public int AttackPower { get; set; }
 
         public ICollection<Trainer> Trainers { get; set; }
 

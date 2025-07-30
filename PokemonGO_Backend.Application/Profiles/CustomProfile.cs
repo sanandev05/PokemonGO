@@ -25,7 +25,13 @@ namespace PokemonGO_Backend.Application.Profiles
 
             CreateMap<PokemonAbility, PokemonAbilityDTO>().ReverseMap();
             CreateMap<Tournament, TournamentDTO>().ReverseMap();
-            CreateMap<Trainer, TrainerDTO>().ReverseMap();
+            CreateMap<Trainer, TrainerDTO>()
+     .ForMember(dest => dest.PokemonIds,
+                opt => opt.MapFrom(src => src.Pokemons.Select(p => p.Id)));
+
+            CreateMap<TrainerDTO, Trainer>()
+                .ForMember(dest => dest.Pokemons, opt => opt.Ignore());
+
         }
     }
 }

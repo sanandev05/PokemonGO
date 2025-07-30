@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PokemonGO_Backend.Persistance.DBContext;
 
@@ -11,9 +12,11 @@ using PokemonGO_Backend.Persistance.DBContext;
 namespace PokemonGO_Backend.Persistance.Migrations
 {
     [DbContext(typeof(PokemonGoDbContext))]
-    partial class PokemonGoDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250728070624_AddedPower")]
+    partial class AddedPower
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -53,6 +56,7 @@ namespace PokemonGO_Backend.Persistance.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImageUrl")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsDeleted")
@@ -90,7 +94,7 @@ namespace PokemonGO_Backend.Persistance.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.Property<int?>("LocationId")
+                    b.Property<int>("LocationId")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
@@ -103,10 +107,10 @@ namespace PokemonGO_Backend.Persistance.Migrations
                     b.Property<DateTime>("StartedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("Trainer1Id")
+                    b.Property<int>("Trainer1Id")
                         .HasColumnType("int");
 
-                    b.Property<int?>("Trainer2Id")
+                    b.Property<int>("Trainer2Id")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("UpdatedAt")
@@ -386,7 +390,7 @@ namespace PokemonGO_Backend.Persistance.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.Property<int?>("LocationId")
+                    b.Property<int>("LocationId")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
@@ -504,17 +508,21 @@ namespace PokemonGO_Backend.Persistance.Migrations
                 {
                     b.HasOne("PokemonGO_Backend.Domain.Entities.Location", "BattleLocation")
                         .WithMany()
-                        .HasForeignKey("LocationId");
+                        .HasForeignKey("LocationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("PokemonGO_Backend.Domain.Entities.Trainer", "Trainer1")
                         .WithMany()
                         .HasForeignKey("Trainer1Id")
-                        .OnDelete(DeleteBehavior.Restrict);
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
 
                     b.HasOne("PokemonGO_Backend.Domain.Entities.Trainer", "Trainer2")
                         .WithMany()
                         .HasForeignKey("Trainer2Id")
-                        .OnDelete(DeleteBehavior.Restrict);
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
 
                     b.Navigation("BattleLocation");
 
@@ -559,7 +567,9 @@ namespace PokemonGO_Backend.Persistance.Migrations
                 {
                     b.HasOne("PokemonGO_Backend.Domain.Entities.Location", "Location")
                         .WithMany()
-                        .HasForeignKey("LocationId");
+                        .HasForeignKey("LocationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Location");
                 });

@@ -73,13 +73,13 @@ namespace PokemonGO_Backend.Application.Services
 
         public async Task<List<TrainerDTO>> GetAll()
         {
-            var trainers = await _repository.GetAllAsync();
+            var trainers = await _repository.GetAllAsync(null,x=>x.Pokemons);
             return _mapper.Map<List<TrainerDTO>>(trainers);
         }
 
         public async Task<TrainerDTO> GetById(int id)
         {
-            var trainer = await _repository.GetByIdAsync(id);
+            var trainer = await _repository.GetByIdAsync(id,x=>x.Pokemons);
             return _mapper.Map<TrainerDTO>(trainer);
         }
 
