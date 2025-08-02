@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using PokemonGO_Backend.API.Hubs;
 using PokemonGO_Backend.Application.Extensions;
 using PokemonGO_Backend.Application.Profiles;
 using PokemonGO_Backend.Persistance.DBContext;
@@ -11,6 +12,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddSignalR();
 builder.Services.AddDbContext<PokemonGoDbContext>(options =>
 
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")), ServiceLifetime.Singleton);
@@ -32,5 +34,8 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.MapHub<ChatHub>("/chatHub");
+app.MapHub<GameHub>("/gameHub");
 
 app.Run();

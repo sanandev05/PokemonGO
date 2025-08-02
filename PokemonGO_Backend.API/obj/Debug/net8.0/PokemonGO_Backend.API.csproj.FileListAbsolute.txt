@@ -390,3 +390,6 @@ C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.API\bin\Debu
 C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.API\bin\Debug\net8.0\PokemonGO_Backend.Contract.pdb
 C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.API\bin\Debug\net8.0\PokemonGO_Backend.Domain.pdb
 C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.API\obj\Debug\net8.0\PokemonGO_Backend.API.sourcelink.json
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.API\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.API\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Icomp\source\Code Aca Learning\PokemonGO\PokemonGO_Backend.API\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll

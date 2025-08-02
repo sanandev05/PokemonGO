@@ -7,7 +7,7 @@
         public string? ImageUrl { get; set; }
         public int Level { get; set; }
 
-        public ICollection<Trainer> Trainers { get; set; }
+        public ICollection<Trainer>? Trainers { get; set; }
     }
 
 }

@@ -1,5 +1,84 @@
 [
   {
+    "ContainingType": "PokemonGO_Backend.API.Controllers.BadgeController",
+    "Method": "GetAll",
+    "RelativePath": "api/Badge",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PokemonGO_Backend.API.Controllers.BadgeController",
+    "Method": "Create",
+    "RelativePath": "api/Badge",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "PokemonGO_Backend.Contract.DTOs.BadgeDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PokemonGO_Backend.API.Controllers.BadgeController",
+    "Method": "Get",
+    "RelativePath": "api/Badge/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PokemonGO_Backend.API.Controllers.BadgeController",
+    "Method": "Update",
+    "RelativePath": "api/Badge/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "PokemonGO_Backend.Contract.DTOs.BadgeDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PokemonGO_Backend.API.Controllers.BadgeController",
+    "Method": "Delete",
+    "RelativePath": "api/Badge/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "PokemonGO_Backend.API.Controllers.GymController",
     "Method": "GetAll",
     "RelativePath": "api/Gym",
@@ -460,6 +539,27 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PokemonGO_Backend.API.Controllers.TournamentController",
+    "Method": "JoinTournament",
+    "RelativePath": "api/Tournament",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tournamentId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "trainerId",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

@@ -9,7 +9,7 @@ namespace PokemonGO_Backend.Contract.DTOs
         public DateTime StartDate { get; set; } = DateTime.UtcNow;
         public DateTime EndDate { get; set; }
 
-        public int LocationId { get; set; }
+        public int? LocationId { get; set; }
         public List<int>? TrainerIds { get; set; }
     }
 }
