@@ -10,7 +10,7 @@ namespace PokemonGO_Backend.API.Hubs
        float rotX, float rotY, float rotZ,
        string animationState)
         {
-            await Clients.Others.SendAsync(
+            await Clients.All.SendAsync(
                 "ReceivePlayerState",
                 userName,
                 posX, posY, posZ,

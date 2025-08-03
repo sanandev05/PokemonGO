@@ -24,8 +24,4 @@
     <ProjectReference Include="..\PokemonGO_Backend.Persistance\PokemonGO_Backend.Persistance.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="NewFolder\" />
-  </ItemGroup>
-
 </Project>

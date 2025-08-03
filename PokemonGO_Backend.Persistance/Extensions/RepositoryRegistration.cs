@@ -12,6 +12,7 @@ namespace PokemonGO_Backend.Persistance.Extensions
             services.AddScoped(typeof(IGenericRepository<>),typeof(GenericRepository<>));
             services.AddSingleton<IGenericRepository<LogData>, GenericRepository<LogData>>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<ILogDataRepository, LogDataRepository>();
             return services;
         }
     }

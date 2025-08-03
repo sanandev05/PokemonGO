@@ -9,8 +9,6 @@ namespace PokemonGO_Backend.API.Controllers
         [HttpPost]
         public Task<IActionResult> JoinTournament(int tournamentId, int trainerId)
         {
-            // Logic to join a tournament
-            // This is a placeholder implementation
             return Task.FromResult<IActionResult>(Ok($"Trainer {trainerId} joined tournament {tournamentId}"));
         }
     }

@@ -11,9 +11,6 @@ namespace PokemonGO_Backend.API.Controllers
     public class PokemonController : ControllerBase
     {
         private IGenericService<Pokemon,PokemonDTO> _service;
-        private IGenericService<Trainer,TrainerDTO> _trainerService;
-        private IGenericService<PokemonAbility, PokemonAbilityDTO> _abilityService;
-        private IGenericService<PokemonCategory, PokemonCategoryDTO> _categoryService;
         private IPokemonService _pokemonService;
         public PokemonController(IGenericService<Pokemon, PokemonDTO> service, IPokemonService pokemonService)
         {

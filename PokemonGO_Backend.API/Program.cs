@@ -37,5 +37,6 @@ app.MapControllers();
 
 app.MapHub<ChatHub>("/chatHub");
 app.MapHub<GameHub>("/gameHub");
+app.MapHub<TournamentHub>("/tournamentHub");
 
 app.Run();

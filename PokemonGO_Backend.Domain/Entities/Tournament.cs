@@ -11,7 +11,6 @@
         public int? LocationId { get; set; }
         public Location Location { get; set; } = null!;
 
-        // Many-to-many relationship with Trainers
         public ICollection<Trainer> Trainers { get; set; } = new List<Trainer>();
     }
 
